@@ -1,0 +1,3 @@
+# Ambolt
+
+Simple benchmark server
