@@ -22,7 +22,6 @@ async fn get_tor_topic_data(Query(TopicRequest { by, val, api_key }): Query<Topi
         let topic_data: Option<TopicData> = if is_empty {
             None
         } else {
-            let topic: TopicData = Default::default();
             Some(TopicData {
                 info_hash: Alphanumeric.sample_string(&mut rng, 40),
                 forum_id: rng.gen(),
